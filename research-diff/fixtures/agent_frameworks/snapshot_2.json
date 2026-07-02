@@ -1,0 +1,27 @@
+{
+  "query": "What is the current state of open-source LLM agent frameworks?",
+  "model": "sonar-pro (mock)",
+  "answer": "Open-source LLM agent frameworks are converging around a handful of patterns. LangGraph offers explicit graph-based orchestration for multi-step agent workflows, while AutoGen focuses on multi-agent conversation patterns where agents negotiate subtasks with each other. CrewAI has also gained traction with a role-based abstraction that packages agents as a 'crew' with defined responsibilities, appealing to teams that want less boilerplate than LangGraph. Most frameworks still lean on the original ReAct prompting pattern (reason, act, observe) as the core loop underneath higher-level orchestration. Adoption is concentrated among teams building internal tooling and coding assistants, with production deployments still relatively rare outside of narrow, well-scoped tasks.",
+  "citations": [
+    {
+      "url": "https://github.com/langchain-ai/langgraph",
+      "title": "langchain-ai/langgraph",
+      "snippet": "Build resilient language agents as graphs."
+    },
+    {
+      "url": "https://microsoft.github.io/autogen/",
+      "title": "AutoGen",
+      "snippet": "A framework for multi-agent conversation."
+    },
+    {
+      "url": "https://arxiv.org/abs/2210.03629",
+      "title": "ReAct: Synergizing Reasoning and Acting in Language Models",
+      "snippet": "Interleaving reasoning traces and task-specific actions."
+    },
+    {
+      "url": "https://github.com/crewAIInc/crewAI",
+      "title": "crewAIInc/crewAI",
+      "snippet": "Framework for orchestrating role-playing, autonomous AI agents."
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+LICENSE
+pyproject.toml
+research_diff/__init__.py
+research_diff/cli.py
+research_diff/client.py
+research_diff/diff.py
+research_diff/digest.py
+research_diff/store.py
+research_diff.egg-info/PKG-INFO
+research_diff.egg-info/SOURCES.txt
+research_diff.egg-info/dependency_links.txt
+research_diff.egg-info/entry_points.txt
+research_diff.egg-info/top_level.txt
+tests/test_diff.py

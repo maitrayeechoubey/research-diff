@@ -1,0 +1,27 @@
+{
+  "query": "What is the current state of open-source LLM agent frameworks?",
+  "model": "sonar-pro (mock)",
+  "answer": "Open-source LLM agent frameworks have consolidated further around graph-based orchestration, with LangGraph now the default recommendation in most tutorials and starter templates. AutoGen remains popular for multi-agent conversation patterns. A widely-shared postmortem from an enterprise adopter detailed a production incident caused by an agent looping on a failed tool call for several hours before a human noticed, reigniting debate over whether current frameworks provide adequate guardrails for autonomous execution versus requiring a human-in-the-loop checkpoint by default. The long-horizon tool-use leaderboard has been updated with two additional frameworks, and reliability past 15 sequential tool calls remains the industry-wide weak point.",
+  "citations": [
+    {
+      "url": "https://github.com/langchain-ai/langgraph",
+      "title": "langchain-ai/langgraph",
+      "snippet": "Build resilient language agents as graphs."
+    },
+    {
+      "url": "https://microsoft.github.io/autogen/",
+      "title": "AutoGen",
+      "snippet": "A framework for multi-agent conversation."
+    },
+    {
+      "url": "https://example-benchmarks.org/agent-leaderboard",
+      "title": "Long-Horizon Agent Tool-Use Leaderboard",
+      "snippet": "Comparative benchmark of agent framework reliability on multi-step tool-use tasks, now covering six frameworks."
+    },
+    {
+      "url": "https://example-postmortems.org/agent-loop-incident",
+      "title": "Postmortem: Agent Tool-Call Loop Incident",
+      "snippet": "An enterprise adopter's writeup of a production incident caused by an unattended agent loop."
+    }
+  ]
+}

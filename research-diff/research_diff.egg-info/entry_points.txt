@@ -1,0 +1,2 @@
+[console_scripts]
+research-diff = research_diff.cli:main

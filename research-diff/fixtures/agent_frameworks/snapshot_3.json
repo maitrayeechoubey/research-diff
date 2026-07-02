@@ -1,0 +1,27 @@
+{
+  "query": "What is the current state of open-source LLM agent frameworks?",
+  "model": "sonar-pro (mock)",
+  "answer": "Open-source LLM agent frameworks have started to consolidate around graph-based orchestration as the dominant pattern. LangGraph has pulled ahead in mindshare, with several teams that started on CrewAI's role-based abstraction reporting they migrated to LangGraph once workflows grew branchy or needed durable state. AutoGen remains popular for multi-agent conversation patterns where agents negotiate subtasks with each other. A newly published benchmark leaderboard comparing agent frameworks on long-horizon tool-use tasks shows meaningful gaps in reliability across all frameworks once tasks exceed roughly 15 sequential tool calls. Production deployments are still concentrated in narrow, well-scoped tasks, though enterprise coding-assistant use cases are growing fastest.",
+  "citations": [
+    {
+      "url": "https://github.com/langchain-ai/langgraph",
+      "title": "langchain-ai/langgraph",
+      "snippet": "Build resilient language agents as graphs."
+    },
+    {
+      "url": "https://microsoft.github.io/autogen/",
+      "title": "AutoGen",
+      "snippet": "A framework for multi-agent conversation."
+    },
+    {
+      "url": "https://github.com/crewAIInc/crewAI",
+      "title": "crewAIInc/crewAI",
+      "snippet": "Framework for orchestrating role-playing, autonomous AI agents."
+    },
+    {
+      "url": "https://example-benchmarks.org/agent-leaderboard",
+      "title": "Long-Horizon Agent Tool-Use Leaderboard",
+      "snippet": "Comparative benchmark of agent framework reliability on multi-step tool-use tasks."
+    }
+  ]
+}
